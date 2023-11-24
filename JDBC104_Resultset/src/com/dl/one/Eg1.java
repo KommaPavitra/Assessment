@@ -21,6 +21,7 @@ public static void main(String[] args) throws SQLException {
 			String query = "select * from emp";
 			
 			ResultSet executeQuery = statement.executeQuery(query);
+			//iterator with iterator
 			while (executeQuery.next()) {
 				System.out.println(executeQuery.getInt(1));
 				System.out.println(executeQuery.getString(2));

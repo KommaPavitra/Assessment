@@ -15,7 +15,7 @@ public class Eg1 {
 			 DatabaseMetaData dbmd = con.getMetaData();
 			 System.out.println("Driver Name..."+dbmd.getDriverName()); 
 			 System.out.println("Driver Version....."+dbmd.getDriverVersion());
-			 System.out.println("Username....."+dbmd.getUserName());
+			 System.out.println("UserName....."+dbmd.getUserName());
 			 System.out.println("Database Product Name.."+dbmd.getDatabaseProductName());
 			 System.out.println("Database product Version.."+dbmd.getDatabaseProductVersion());
 			
@@ -31,4 +31,8 @@ public class Eg1 {
 
 }
 //output:
-
+//Driver Name...MySQL Connector/J
+//Driver Version.....mysql-connector-java-8.0.11 (Revision: 6d4eaa273bc181b4cf1c8ad0821a2227f116fedf)
+//UserName.....root@localhost
+//Database Product Name..MySQL
+//Database product Version..8.0.34

@@ -24,7 +24,7 @@ public class Eg1 {
 			prepareStatement.setString(3, "Hyd");
 			prepareStatement.setLong(4, 9876543210L);
 			prepareStatement.addBatch();
-			
+			//for every record we have to add batch.
 			prepareStatement.setInt(1, 102);
 			prepareStatement.setString(2, "Sai Kumar");
 			prepareStatement.setString(3, "Hyd");
@@ -37,8 +37,8 @@ public class Eg1 {
 			prepareStatement.setLong(4, 9876543210L);
 			prepareStatement.addBatch();
 			
-			int[] executeBatch = prepareStatement.executeBatch();
-			for (int i : executeBatch) {
+			int[] executeBatch = prepareStatement.executeBatch();//array type
+			for (int i : executeBatch) {                       //for each
 				System.out.println("Record Inserted: " + i);
 			}
 			
@@ -49,7 +49,7 @@ public class Eg1 {
 			prepareStatement.close();
 			connection.close();
 		}
-
+		//we can pass place holders in prepare statements difference b/w statement and prepared statement
 	}
 
 }

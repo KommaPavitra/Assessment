@@ -41,7 +41,27 @@ public class Eg1 {
 		}
 		 
 		//output:
-		
+		/*
+		 No.of Columns :4
+********************
+Column name.......e_no
+Data Type......INT
+Column Size.....11
+******************************
+Column name.......e_name
+Data Type......VARCHAR
+Column Size.....40
+******************************
+Column name.......e_address
+Data Type......VARCHAR
+Column Size.....255
+******************************
+Column name.......e_contact
+Data Type......DOUBLE
+Column Size.....22
+******************************
+
+		 */
 	}
 
 }

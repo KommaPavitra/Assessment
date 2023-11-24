@@ -41,7 +41,7 @@ public static void main(String[] args) throws IOException,SQLException{
 	Class.forName(Dclass);
 	con = DriverManager.getConnection(Durl,Duser,Dpass);
 	st = con.createStatement();
-	String s1="(create table emp_properties(eid int ,ename varchar(40),lname varchar(40),address varchar(255) salary double)";
+	String s1 ="(create table emp_properties(eid int ,ename varchar(40),lname varchar(40),address varchar(255) salary double)";
 	String s2="(insert into emp_properties values(301,'ishan','analyst','cts',22000)";
 	int  aa = st.executeUpdate(s2);
 	if(aa==1) {
